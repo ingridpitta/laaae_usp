@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "./logo.svg";
+import { Home } from "./pages";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>LAAAE USP</h1>
+      <Home />
     </div>
   );
 }
