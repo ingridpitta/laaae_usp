@@ -1,6 +1,6 @@
 import React from "react";
 
-const HomeContent = () => {
+const HomeContent = ({ posts }) => {
   return (
     <main>
       <section>
@@ -36,6 +36,11 @@ const HomeContent = () => {
           </p>
         </div>
       </section>
+      {posts.map((post, index) => (
+        <div key={`${index + 1}--post`}>
+          <h2>{post.title.rendered}</h2>
+        </div>
+      ))}
     </main>
   );
 };
