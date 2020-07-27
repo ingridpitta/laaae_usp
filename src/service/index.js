@@ -8,55 +8,61 @@ class ApiService {
   }
 
   getAllPosts = async () => {
-    const { data } = await this.api.get(`/posts`);
+    const { data } = await this.api.get(`/wp/v2/posts`);
+
+    return data;
+  };
+
+  getAllMenus = async () => {
+    const { data } = this.api.get(`/wp-api-menus/v2/menus`);
 
     return data;
   };
 
   getAllPages = async () => {
-    const { data } = this.api.get(`/pages`);
+    const { data } = this.api.get(`/wp/v2/pages`);
 
     return data;
   };
 
   getAllComments = async () => {
-    const { data } = this.api.get(`/comments`);
+    const { data } = this.api.get(`/wp/v2/comments`);
 
     return data;
   };
 
   getAllMedia = async () => {
-    const { data } = this.api.get(`/media`);
+    const { data } = this.api.get(`/wp/v2/media`);
 
     return data;
   };
 
   getAllCategories = async () => {
-    const { data } = this.api.get(`/categories`);
+    const { data } = this.api.get(`/wp/v2/categories`);
 
     return data;
   };
 
   getAllTaxonomies = async () => {
-    const { data } = this.api.get(`/taxonomies`);
+    const { data } = this.api.get(`/wp/v2/taxonomies`);
 
     return data;
   };
 
   getAllUsers = async () => {
-    const { data } = this.api.get(`/users`);
+    const { data } = this.api.get(`/wp/v2/users`);
 
     return data;
   };
 
   getAllBlocks = async () => {
-    const { data } = this.api.get(`/blocks`);
+    const { data } = this.api.get(`/wp/v2/blocks`);
 
     return data;
   };
 
   getAllTags = async () => {
-    const { data } = this.api.get(`/tags`);
+    const { data } = this.api.get(`/wp/v2/tags`);
 
     return data;
   };
