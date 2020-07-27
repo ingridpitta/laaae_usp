@@ -1,0 +1,73 @@
+@import '~antd/dist/antd.css';
+@import "../../../styles/_index";
+
+.navBar--wrapper{
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 100vw;
+        .navBar--container{
+        @extend %nav;
+    }
+
+    .search, .ant-input-search, .ant-input-affix-wrapper{
+        background-color: transparent;
+        border: none;
+        border-color: none;
+        border-bottom: 0.5px solid $color-gray--light;
+        color: $white;
+        outline: none;
+
+        &::selection {
+            background: transparent;
+        }
+
+        --antd-wave-shadow-color: none;
+
+        &:focus, &:active, &:hover{
+            outline: none;
+            border: none;
+            border-width: 0;
+            border-color: none;
+            background: transparent;
+            --antd-wave-shadow-color: none;
+            border-bottom: 1px solid $color-gray--light;
+        }
+
+       .ant-input{
+           background-color: transparent;
+           border: none;
+           color: $white;
+           outline: none;
+
+           &:focus, &:active, &:hover{
+               outline: none;
+           }
+       } 
+
+       .ant-input-suffix{
+           border: none;
+
+           .anticon, .anticon-search, .ant-input-search-icon{
+                color: $color-gray--light;
+                border: none;
+               svg{
+
+               }
+           }
+
+           .ant-input-search-icon::before{
+               border: none;
+           }
+       }
+    }
+
+    .ant-input-affix-wrapper-focused, .ant-input-affix-wrapper-disabled, .ant-input-focused, .ant-input-disabled, .ant-input-search-focused, .ant-input-search-disabled{
+        border-color: none !important;
+        border-width: none !important;
+        border-right-width: none !important;
+        outline: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-bottom: 1px solid $color-gray--light;
+    }
+}

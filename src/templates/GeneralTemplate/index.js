@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavBar } from "../../components/molecules";
 import ApiService from "../../service";
 
 class GeneralTemplate extends Component {
@@ -21,8 +22,8 @@ class GeneralTemplate extends Component {
     const { children } = this.props;
 
     return (
-      <div className="container">
-        <nav>LAAAE</nav>
+      <div className="container" style={{position: "relative"}}>
+        <NavBar />
         {children}
         <footer>LAAAE</footer>
       </div>

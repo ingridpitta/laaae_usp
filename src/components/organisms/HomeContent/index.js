@@ -1,14 +1,16 @@
 import React from "react";
+import "./homeContent.styles.scss";
 
 const HomeContent = ({ posts }) => {
   return (
     <main>
-      <section>
-        <div>IMAGEM</div>
+      <section className="carrossel--container">
         <div>
-          <h1>LAAAE - USP</h1>
-          <h2>RESUMINHO</h2>
-          <h3>TEXTO</h3>
+          <div>
+            <h1>LAAAE - USP</h1>
+            <h2>RESUMINHO</h2>
+            <h3>TEXTO</h3>
+          </div>
         </div>
       </section>
       <section>
@@ -31,7 +33,7 @@ const HomeContent = ({ posts }) => {
             dolore mollit non consectetur ea dolor nulla ea. Aute minim proident
             laboris sunt sunt eu.
             <span>
-              <a href="/educacaoparatodes">Saiba Mais</a>
+              <a href="/evolucaoparatodes">Saiba Mais</a>
             </span>
           </p>
         </div>
