@@ -17,7 +17,7 @@ const HomeContent = ({ posts }) => {
             Educação para <span>TODES</span>
           </h2>
           <div>
-            <a href="/educacaoparatodes">Conheça o projeto</a>
+            <a href="/evolucaoparatodes">Conheça o projeto</a>
             <img src="" alt="ir para educação para todes" />
           </div>
           <p>
