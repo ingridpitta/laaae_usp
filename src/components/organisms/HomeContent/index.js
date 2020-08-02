@@ -1,42 +1,67 @@
 import React from "react";
+import {Link} from "react-router-dom";
+import {ReactComponent as Arrow} from "../../../assets/arrow_right.svg";
+import {Carousel} from "../../molecules";
 import "./homeContent.styles.scss";
 
 const HomeContent = ({ posts }) => {
   return (
-    <main>
+    <main className="homeContent--container">
       <section className="carrossel--container">
-        <div>
-          <div>
-            <h1>LAAAE - USP</h1>
-            <h2>RESUMINHO</h2>
-            <h3>TEXTO</h3>
-          </div>
-        </div>
+          <Carousel images={[{src:"../../../assets/main_picture.png"}]}/>
       </section>
-      <section>
-        <div>
+      <section className="evolucaoParaTodes--container">
+        <aside>
           <h2>
-            Educação para <span>TODES</span>
+            Evolução para <span>TODES</span>
           </h2>
           <div>
-            <a href="/evolucaoparatodes">Conheça o projeto</a>
-            <img src="" alt="ir para educação para todes" />
+            <Link to="/evolucaoparatodes">Conheça o projeto</Link>
+            <Arrow alt="ir para educação para todes" />
           </div>
-          <p>
-            Adipisicing deserunt dolore mollit non consectetur ea dolor nulla
-            ea. Aute minim proident laboris sunt sunt eu. Adipisicing deserunt
-            dolore mollit non consectetur ea dolor nulla ea. Aute minim proident
-            laboris sunt sunt eu. Adipisicing deserunt dolore mollit non
-            consectetur ea dolor nulla ea. Aute minim proident laboris sunt sunt
-            eu.Adipisicing deserunt dolore mollit non consectetur ea dolor nulla
-            ea. Aute minim proident laboris sunt sunt eu.Adipisicing deserunt
-            dolore mollit non consectetur ea dolor nulla ea. Aute minim proident
-            laboris sunt sunt eu.
-            <span>
-              <a href="/evolucaoparatodes">Saiba Mais</a>
-            </span>
-          </p>
-        </div>
+        </aside>
+        <p>
+          Adipisicing deserunt dolore mollit non consectetur ea dolor nulla
+          ea. Aute minim proident laboris sunt sunt eu. Adipisicing deserunt
+          dolore mollit non consectetur ea dolor nulla ea. Aute minim proident
+          laboris sunt sunt eu. Adipisicing deserunt dolore mollit non
+          consectetur ea dolor nulla ea. Aute minim proident laboris sunt sunt
+          eu.Adipisicing deserunt dolore mollit non consectetur ea dolor nulla
+          ea. Aute minim proident laboris sunt sunt eu.Adipisicing deserunt
+          dolore mollit non consectetur ea dolor nulla ea. Aute minim proident
+          laboris sunt sunt eu.
+          <span>
+            <Link to="/evolucaoparatodes"> Saiba Mais</Link>
+          </span>
+        </p>
+      </section>
+      <section className="pesquisa--container">
+        <h1>Pesquisa</h1>
+      
+      </section>
+      <section className="campo--container">
+        <h1>Campo</h1>
+      
+      </section>
+      <section className="acervo--container">
+        <h1>Acervo</h1>
+      
+      </section>
+      <section className="publicacoes--container">
+        <h1>Publicações</h1>
+      
+      </section>
+      <section className="destaques--container">
+        <h1>Destaques</h1>
+      
+      </section>
+      <section className="equipe--container">
+        <h1>Equipe</h1>
+      
+      </section>
+      <section className="facaParte--container">
+        <h1>Faça Parte do LAB</h1>
+      
       </section>
       {posts.map((post, index) => (
         <div key={`${index + 1}--post`}>

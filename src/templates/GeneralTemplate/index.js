@@ -22,7 +22,7 @@ class GeneralTemplate extends Component {
     const { children } = this.props;
 
     return (
-      <div className="container" style={{position: "relative"}}>
+      <div className="container" style={{ position: "relative" }}>
         <NavBar />
         {children}
         <footer>LAAAE</footer>

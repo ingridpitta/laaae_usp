@@ -1,0 +1,39 @@
+@import "../../../styles/_index";
+
+.carouselContent--container{
+    background: url("../../../assets/main_picture.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -15;
+    height: 680px;
+
+    div{
+        width: 100%;
+        padding-top: 250px;
+        margin: 0 auto;
+
+        h1, h2, h3{
+            color: $white;
+        }
+
+        h1{
+            font-size: $font-size--title--extraBig;
+            margin-bottom: 10px;
+        }
+
+        h2{
+            font-size: $font-size--title--extrabig--secondary;
+            width: 90%;
+            font-weight: normal;
+            margin: 0 auto;
+        }
+
+        h3{
+            font-size: $font-size--subtitle;
+            font-weight: normal;
+            width: 60%;
+            margin: 20px auto;
+        }
+    }
+}

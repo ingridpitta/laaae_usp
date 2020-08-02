@@ -1,20 +1,56 @@
 @import "../../../styles/_index";
 
-.carrossel--container{
+.homeContent--container{
+  margin: 0 auto;
+  text-align: center;
+
+  .carrossel--container {
     max-width: 100vw;
     padding: 0;
+    width: 100%;
+    height: 680px;
+    z-index: -10;
+  }
 
-    div{
-        position: absolute;
-        width: 100%;
-        padding: 0;
-        display: block;
-        top: 0;
-        background: url("../../../assets/main_picture.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 680px;
-        z-index: -10;
+  .evolucaoParaTodes--container{
+    @include flex(center, space-between, row);
+    border-bottom: 1px solid $color-gray;
+    width: 90%;
+    padding: 80px;
+    margin: 0 auto;
+
+    aside{
+      width: 50%;
+
+      h2{
+        text-align: left;
+
+        span{
+
+        }
+      }
+
+      div{
+        text-align: left;
+        margin-left: 0;
+
+        a{
+
+        }
+        
+        svg{
+
+        }
+      }
     }
+
+    p{
+      width: 50%;
+      text-align: justify;
+
+      span{
+
+      }
+    }
+  }
 }
