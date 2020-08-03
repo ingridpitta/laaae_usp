@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/wp-content/themes/laaae_usp/static/css/main.chunk.css",
+    "main.js": "/wp-content/themes/laaae_usp/static/js/main.chunk.js",
+    "main.js.map": "/wp-content/themes/laaae_usp/static/js/main.chunk.js.map",
+    "runtime-main.js": "/wp-content/themes/laaae_usp/static/js/bundle.js",
+    "runtime-main.js.map": "/wp-content/themes/laaae_usp/static/js/bundle.js.map",
+    "static/css/2.chunk.css": "/wp-content/themes/laaae_usp/static/css/2.chunk.css",
+    "static/js/2.chunk.js": "/wp-content/themes/laaae_usp/static/js/2.chunk.js",
+    "static/js/2.chunk.js.map": "/wp-content/themes/laaae_usp/static/js/2.chunk.js.map",
+    "index.php": "/wp-content/themes/laaae_usp/index.php",
+    "precache-manifest.9215b1582dea61babc5a45bb168f167d.js": "/wp-content/themes/laaae_usp/precache-manifest.9215b1582dea61babc5a45bb168f167d.js",
+    "service-worker.js": "/wp-content/themes/laaae_usp/service-worker.js",
+    "static/css/2.chunk.css.map": "/wp-content/themes/laaae_usp/static/css/2.chunk.css.map",
+    "static/css/main.chunk.css.map": "/wp-content/themes/laaae_usp/static/css/main.chunk.css.map",
+    "static/js/2.chunk.js.LICENSE.txt": "/wp-content/themes/laaae_usp/static/js/2.chunk.js.LICENSE.txt",
+    "static/media/arrow_right.91600034.svg": "/wp-content/themes/laaae_usp/static/media/arrow_right.91600034.svg",
+    "static/media/fb_icon.0a8849d1.svg": "/wp-content/themes/laaae_usp/static/media/fb_icon.0a8849d1.svg",
+    "static/media/insta_icon.907c924b.svg": "/wp-content/themes/laaae_usp/static/media/insta_icon.907c924b.svg",
+    "static/media/carouselContent.styles.scss": "/wp-content/themes/laaae_usp/static/media/main_picture.c3c7113d.png"
+  },
+  "entrypoints": [
+    "static/js/bundle.js",
+    "static/css/2.chunk.css",
+    "static/js/2.chunk.js",
+    "static/css/main.chunk.css",
+    "static/js/main.chunk.js"
+  ]
+}
