@@ -19,7 +19,7 @@
     "craeject": "react-scripts eject",
     "crastart": "react-scripts start",
     "cratest": "react-scripts test",
-    "build": "CI=wptheme-scripts build",
+    "build": "wptheme-scripts build",
     "start": "wptheme-scripts start",
     "wpbuild": "wptheme-scripts wpbuild",
     "wpstart": "wptheme-scripts wpstart"
