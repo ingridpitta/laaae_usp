@@ -1,6 +1,6 @@
 @import "../../../styles/_index";
 
-.homeContent--container{
+.homeContent--container {
   margin: 0 auto;
   text-align: center;
 
@@ -12,44 +12,106 @@
     z-index: -10;
   }
 
-  .evolucaoParaTodes--container{
+  section {
+    border-bottom: 1px solid $color-gray;
+    width: 90%;
+    padding: 80px;
+    margin: 0 auto;
+  }
+
+  .evolucaoParaTodes--container {
     @include flex(center, space-between, row);
     border-bottom: 1px solid $color-gray;
     width: 90%;
     padding: 80px;
     margin: 0 auto;
 
-    aside{
+    aside {
       width: 50%;
 
-      h2{
+      h2 {
         text-align: left;
 
-        span{
-
+        span {
+          color: $color-gray;
         }
       }
 
-      div{
+      div {
         text-align: left;
         margin-left: 0;
 
-        a{
-
+        a {
+          color: $color-gray;
         }
-        
-        svg{
 
+        svg {
         }
       }
     }
 
-    p{
+    p {
       width: 50%;
       text-align: justify;
 
-      span{
+      span {
+        a {
+          color: $color-gray;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 
+  .pesquisa--container {
+    width: 90%;
+    padding: 80px;
+    margin: 0 auto;
+    border-bottom: 1px solid $color-gray;
+
+    h1 {
+    }
+
+    .pesquisa--cards {
+      margin: 50px auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+      row-gap: 20px;
+
+      .cards--content {
+        background-color: $color-gray;
+        padding: 160px 20px 20px 20px;
+        height: 300px;
+        text-align: left;
+
+        h2 {
+          color: white;
+          margin-bottom: 20px;
+        }
+
+        a {
+          color: $white;
+          border: 1px solid $white;
+          border-radius: 5px;
+          padding: 10px 20px;
+
+          &:hover,
+          &:active {
+            color: $color-gray;
+            background-color: $white;
+          }
+        }
+      }
+    }
+
+    .section--seeMore {
+      text-align: right;
+
+      a {
+        text-align: right;
+        color: $color-gray;
       }
     }
   }

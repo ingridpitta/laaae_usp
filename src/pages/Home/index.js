@@ -9,20 +9,24 @@ class Home extends Component {
 
     this.state = {
       posts: [],
+      pages: [],
     };
   }
 
   componentDidMount = async () => {
     const posts = await ApiService.getAllPosts();
-    this.setState({ posts });
+    const pages = await ApiService.getAllPages();
+
+    this.setState({ posts, pages });
   };
 
   render() {
-    const { posts } = this.state;
-    console.log({ posts });
+    const { posts, pages } = this.state;
+
+    console.log({ posts, pages });
     return (
       <GeneralTemplate>
-        <HomeContent posts={posts} />
+        <HomeContent posts={posts} pages={pages} />
       </GeneralTemplate>
     );
   }

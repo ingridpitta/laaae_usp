@@ -8,61 +8,67 @@ class ApiService {
   }
 
   getAllPosts = async () => {
-    const { data } = await this.api.get(`/wp/v2/posts`);
+    const { data } = await this.api.get(`/wp/v2/posts/?per_page=100`);
 
     return data;
   };
 
   getAllMenus = async () => {
-    const { data } = this.api.get(`/wp-api-menus/v2/menus`);
+    const { data } = await this.api.get(`/wp-api-menus/v2/menus/?per_page=100`);
 
     return data;
   };
 
   getAllPages = async () => {
-    const { data } = this.api.get(`/wp/v2/pages`);
+    const { data } = await this.api.get(`/wp/v2/pages/?per_page=100`);
 
     return data;
   };
 
   getAllComments = async () => {
-    const { data } = this.api.get(`/wp/v2/comments`);
+    const { data } = await this.api.get(`/wp/v2/comments/?per_page=100`);
 
     return data;
   };
 
   getAllMedia = async () => {
-    const { data } = this.api.get(`/wp/v2/media`);
+    const { data } = await this.api.get(`/wp/v2/media/?per_page=100`);
+
+    return data;
+  };
+
+  getMediasById = async (id) => {
+    const { data } = await this.api.get(`/wp/v2/media/${id}`);
 
     return data;
   };
 
   getAllCategories = async () => {
-    const { data } = this.api.get(`/wp/v2/categories`);
+    const { data } = this.api.get(`/wp/v2/categories/?per_page=100`);
 
     return data;
   };
 
   getAllTaxonomies = async () => {
-    const { data } = this.api.get(`/wp/v2/taxonomies`);
+    const { data } = this.api.get(`/wp/v2/taxonomies/?per_page=100`);
 
     return data;
   };
 
   getAllUsers = async () => {
-    const { data } = this.api.get(`/wp/v2/users`);
+    const { data } = this.api.get(`/wp/v2/users/?per_page=100`);
 
     return data;
   };
 
   getAllBlocks = async () => {
-    const { data } = this.api.get(`/wp/v2/blocks`);
+    const { data } = this.api.get(`/wp/v2/blocks/?per_page=100`);
 
     return data;
   };
 
   getAllTags = async () => {
-    const { data } = this.api.get(`/wp/v2/tags`);
+    const { data } = this.api.get(`/wp/v2/tags/?per_page=100`);
 
     return data;
   };
