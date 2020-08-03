@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavBar } from "../../components/molecules";
+import { NavBar, Footer } from "../../components/molecules";
 import ApiService from "../../service";
 
 class GeneralTemplate extends Component {
@@ -25,7 +25,7 @@ class GeneralTemplate extends Component {
       <div className="container" style={{ position: "relative" }}>
         <NavBar />
         {children}
-        <footer>LAAAE</footer>
+        <Footer/>
       </div>
     );
   }

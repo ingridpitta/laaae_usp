@@ -42,7 +42,7 @@ const HomeContent = ({ posts, pages }) => {
         <div className="pesquisa--cards">
           {pages.slice(1, 5).map((page, index) => {
             return (
-              <div key={`${index + 1}--page`} className="cards--content">
+              <div key={`${index + 1}--pagePesquisa`} className="cards--content--pesquisa">
                 <h2>{page.title.rendered.toUpperCase()}</h2>
                 <Link to={`/pesquisa/${page.slug}`}> + Detalhes</Link>
               </div>
@@ -56,9 +56,21 @@ const HomeContent = ({ posts, pages }) => {
       </section>
       <section className="campo--container">
         <h1>Campo</h1>
+        <h2>EM BREVE</h2>
       </section>
       <section className="acervo--container">
         <h1>Acervo</h1>
+
+        <div className="acervo--cards">
+          {pages.slice(10, 16).map((page, index) => {
+            return (
+              <div key={`${index + 1}--pageAcervo`} className="cards--content--acervo">
+                <h2>{page.title.rendered.toUpperCase()}</h2>
+                <Link to={`/acervo/${page.slug}`}> + Detalhes</Link>
+              </div>
+            );
+          })}
+        </div>
 
         <div className="section--seeMore">
           <Link to="/acervo">Ver Mais</Link>
@@ -66,6 +78,12 @@ const HomeContent = ({ posts, pages }) => {
       </section>
       <section className="publicacoes--container">
         <h1>Publicações</h1>
+
+        <div className="publicacoes--cards">
+          <h2>2020</h2>
+          
+          <h2>2019</h2>
+        </div>
       </section>
       <section className="destaques--container">
         <h1>Destaques</h1>
@@ -76,11 +94,11 @@ const HomeContent = ({ posts, pages }) => {
       <section className="facaParte--container">
         <h1>Faça Parte do LAB</h1>
       </section>
-      {posts.map((post, index) => (
+      {/* {posts.map((post, index) => (
         <div key={`${index + 1}--post`}>
           <h2>{post.title.rendered}</h2>
         </div>
-      ))}
+      ))} */}
     </main>
   );
 };

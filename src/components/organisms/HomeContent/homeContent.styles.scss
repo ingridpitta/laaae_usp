@@ -17,35 +17,42 @@
     width: 90%;
     padding: 80px;
     margin: 0 auto;
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
 
   .evolucaoParaTodes--container {
-    @include flex(center, space-between, row);
-    border-bottom: 1px solid $color-gray;
-    width: 90%;
-    padding: 80px;
-    margin: 0 auto;
+    @include flex(top, space-between, row);
 
     aside {
       width: 50%;
 
       h2 {
         text-align: left;
+        width: 50%;
+        font-size: $font-size--title--big;
 
         span {
           color: $color-gray;
+          text-decoration: underline;
         }
       }
 
       div {
+        @include flex(center, left, row);
         text-align: left;
         margin-left: 0;
 
         a {
           color: $color-gray;
+          font-size: $font-size--title;
+          font-height: lighter;
         }
 
         svg {
+          margin: 0 10px;
         }
       }
     }
@@ -64,10 +71,6 @@
   }
 
   .pesquisa--container {
-    width: 90%;
-    padding: 80px;
-    margin: 0 auto;
-    border-bottom: 1px solid $color-gray;
 
     h1 {
     }
@@ -80,15 +83,17 @@
       column-gap: 20px;
       row-gap: 20px;
 
-      .cards--content {
+      .cards--content--pesquisa {
         background-color: $color-gray;
-        padding: 160px 20px 20px 20px;
+        padding: 180px 20px 20px 20px;
         height: 300px;
         text-align: left;
 
         h2 {
           color: white;
+          font-size: $font-size--medium;
           margin-bottom: 20px;
+          width: 60%;
         }
 
         a {
@@ -96,6 +101,7 @@
           border: 1px solid $white;
           border-radius: 5px;
           padding: 10px 20px;
+          font-size: $font-size--medium;
 
           &:hover,
           &:active {
@@ -105,13 +111,57 @@
         }
       }
     }
+  }
 
-    .section--seeMore {
+  .section--seeMore {
+    text-align: right;
+
+    a {
       text-align: right;
+      color: $color-gray;
+    }
+  }
 
-      a {
-        text-align: right;
-        color: $color-gray;
+  .acervo--container {
+
+    h1 {
+    }
+
+    .acervo--cards {
+      margin: 50px auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 0;
+      row-gap: 0;
+
+      .cards--content--acervo {
+        background-color: $color-gray;
+        padding: 120px 20px 20px 20px;
+        height: 250px;
+        text-align: left;
+        border: 0.5px solid $white;
+
+        h2 {
+          color: white;
+          font-size: $font-size--medium;
+          margin-bottom: 20px;
+          width: 100%;
+        }
+
+        a {
+          color: $white;
+          border: 1px solid $white;
+          border-radius: 5px;
+          padding: 10px 20px;
+          font-size: $font-size--medium;
+
+          &:hover,
+          &:active {
+            color: $color-gray;
+            background-color: $white;
+          }
+        }
       }
     }
   }
